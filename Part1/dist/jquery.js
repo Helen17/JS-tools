@@ -1,0 +1,1 @@
+$("#clickme").click(function(){$("#book").animate({opacity:.25,left:"+=50",height:"toggle"},5e3,function(){alert("animation complete!")})});

@@ -1,0 +1,1 @@
+console.log("----NUMERAL.JS----"),console.log("-Example 1(Format Number):"),console.log(numeral(1234.56).format("0,0.00"));var number=numeral(1e3),multiply=number.multiply(100);console.log("-Example 2(Multiply Number):"),console.log(multiply._value);

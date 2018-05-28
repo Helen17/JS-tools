@@ -1,0 +1,4 @@
+$("#clickme").click(function(){$("#book").animate({opacity:.25,left:"+=50",height:"toggle"},5e3,function(){alert("animation complete!")})});
+console.log("----LODASH.JS----"),console.log("-Example 1(array method):");var join=_.join(["a","b","c"],"~");console.log(join),console.log("-Example 2(lang method):");var objects=[{a:1},{b:2}],shallow=_.clone(objects);console.log(shallow[0]===objects[0]);
+console.log("----MOMENT.JS----"),console.log("-Example 2(time from now):"),console.log(moment([2007,0,29]).fromNow()+" from 2007");var NowMoment=moment(),eDisplayMoment=document.getElementById("example-1");eDisplayMoment.innerHTML=NowMoment.format("YYYY-MM-DD");
+console.log("----NUMERAL.JS----"),console.log("-Example 1(Format Number):"),console.log(numeral(1234.56).format("0,0.00"));var number=numeral(1e3),multiply=number.multiply(100);console.log("-Example 2(Multiply Number):"),console.log(multiply._value);
