@@ -45,18 +45,13 @@ gulp.task('concat', function() {
 
 gulp.task('del', function(){
       return del([
-        './prod'
+        './prod/'
       ]);
   });
-
-gulp.task('create', function(){
-    return gulp.src('*.*', {read: false})
-           .pipe(gulp.dest('./prod'))
-});
 
 gulp.task('copyHtml',function(){
     return gulp.src('./index.html')
                .pipe(gulp.dest('./prod/'));
 });
 
-gulp.task('prod', ['del', 'create', 'copyHtml', 'sass', 'uglify', 'concat']);
+gulp.task('prod', ['del',  'copyHtml', 'sass', 'uglify', 'concat']);
